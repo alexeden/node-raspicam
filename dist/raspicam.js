@@ -52,7 +52,7 @@ var Raspicam = /** @class */ (function (_super) {
         return _this;
     }
     Raspicam.create = function (partialOpts) {
-        var opts = __assign({ mode: 'photo', filename: 'image.jpg', filepath: process.cwd(), encoding: 'jpg', delay: 0, height: 480, quality: 75, rotation: 0, timeout: 0, width: 640, log: console.log.bind(console, chalk.magenta('raspicam')) }, partialOpts);
+        var opts = __assign({ mode: 'photo', filename: 'image.jpg', filepath: process.cwd(), encoding: 'jpg', ISO: 0, delay: 0, height: 480, quality: 75, rotation: 0, timeout: 0, width: 640, log: console.log.bind(console, chalk.magenta('raspicam')) }, partialOpts);
         opts.log('opts', opts);
         return new Raspicam(opts);
     };

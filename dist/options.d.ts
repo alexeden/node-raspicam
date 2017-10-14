@@ -9,6 +9,7 @@ export interface RaspicamOptions {
     height: number;
     rotation: number;
     quality: number;
+    ISO: number;
     encoding: 'jpg' | 'bmp' | 'gif' | 'png';
     timeout: number;
 }

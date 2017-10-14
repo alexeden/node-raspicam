@@ -13,6 +13,7 @@ export interface RaspicamOptions {
   rotation: number;
   quality: number;
   // annotate: string;
+  ISO: number;
   encoding: 'jpg' | 'bmp' | 'gif' | 'png';
   timeout: number;
 }
@@ -47,7 +48,6 @@ export const imageFlags: (keyof ImageParameters)[] =
   [ 'decimate'
   , 'hflip'
   , 'vflip'
-  , 'ISO'
   , 'vstab'
   ];
 
@@ -55,6 +55,7 @@ export const imageControls: (keyof ImageParameters)[] =
   [ 'output'
   , 'width'
   , 'height'
+  , 'ISO'
   // , 'annotate'
   // , 'quality'
   , 'sharpness'

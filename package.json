@@ -15,6 +15,10 @@
     "example:photo": "ts-node --project $PWD/examples examples/photo.ts",
     "example:video": "ts-node --project $PWD/examples examples/video.ts",
     "exec": "npm run example:video",
+    "ffserver": "ffserver -f ffserver.conf",
+    "ffmpeg": "ffmpeg -re -i pipe:0 -f rtsp -muxdelay 0.1 rtsp://server/live.sdp",
+    "nc": "nc -lkv4 5001",
+
     "exec:watch": "nodemon --exec \"npm run exec\" -w examples -w dist -e ts,json,js --delay 5",
     "sync": "node rsync.js",
     "sync:watch": "nodemon --exec \"npm run sync\" -w examples -w lib -e ts,json,js",

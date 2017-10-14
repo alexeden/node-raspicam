@@ -8,7 +8,7 @@ const camera = Raspicam.create({
   filename: `image-${now.toLocaleDateString()}-${now.toLocaleTimeString()}.jpg`,
   encoding: 'jpg',
   rotation: 180,
-  // width: 3000,
+  ISO: 800,
   timeout: 1 // take the picture immediately
 });
 

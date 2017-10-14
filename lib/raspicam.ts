@@ -33,6 +33,7 @@ export class Raspicam extends EventEmitter  {
       filename: 'image.jpg',
       filepath: process.cwd(),
       encoding: 'jpg',
+      ISO: 0,
       delay: 0,
       height: 480,
       quality: 75,
